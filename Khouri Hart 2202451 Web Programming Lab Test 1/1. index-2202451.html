@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility & EMI Calculator</title>
+	<title>Khouri Hart Lab Test 1</title>
+    <link rel="stylesheet" href="style-2202451.css">
+    <script defer src="script-2202451.js"></script>
+</head>
+<body>
+    <!-- que. 1a: Loan Eligibility & EMI Form -->
+    <h1>CIT2011 Loan Eligibility & EMI Calculator</h1>
+    <img src="utech_id.jpg" alt="Utech ID" class="id-img">
+
+    <form id="loanForm">
+        <label>Full Name:</label>
+        <input type="text" id="fullName" required> <span class="req">*</span><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" id="dob" required> <span class="req">*</span><br>
+
+        <label>Gender:</label>
+        <select id="gender" required>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select> <span class="req">*</span><br>
+
+        <label>How did you hear about us?</label><br>
+        <input type="checkbox" value="Newspaper"> Newspaper
+        <input type="checkbox" value="Friend"> Friend
+        <input type="checkbox" value="Facebook"> Facebook
+        <input type="checkbox" value="Radio"> Radio
+        <input type="checkbox" id="otherCheck" value="Other"> Other: 
+        <input type="text" id="otherText"><br><br>
+
+        <label>Currency:</label>
+        <select id="currency">
+            <option value="JMD">JMD</option>
+            <option value="USD">USD</option>
+        </select><br><br>
+
+        <label>Monthly Salary:</label>
+        <input type="number" id="salary" required> <span class="req">*</span><br>
+
+        <label>Loan Amount:</label>
+        <input type="number" id="loanAmount" required> <span class="req">*</span><br>
+
+        <label>Duration (Years):</label>
+        <input type="number" id="duration" required> <span class="req">*</span><br>
+
+        <label>Interest Rate (%):</label>
+        <input type="number" step="0.01" id="interest" required> <span class="req">*</span><br>
+
+        <button type="button" onclick="checkEligibility()">Check Eligibility</button>
+        <button type="reset">Reset Form</button>
+        <button type="button" onclick="saveData()">Save Data</button>
+        <button type="button" onclick="viewData()">View Data</button>
+        <button type="button" onclick="clearData()">Clear Storage</button>
+        <button type="button" onclick="exitApp()">Exit</button>
+    </form>
+
+    <div id="result"></div>
+    <div id="storageDisplay"></div>
+</body>
+</html>

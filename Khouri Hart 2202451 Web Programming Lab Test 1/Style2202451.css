@@ -1,0 +1,147 @@
+/* =========================
+   CIT2011 Loan Calculator
+   Professional CSS
+   Author: Khouri Hart
+   ID: 2202451
+========================= */
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #1f1f1f;
+}
+
+/* Header */
+h1 {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #2e7d32;
+}
+
+/* ID Image */
+.id-img {
+    width: 200px;
+    margin: 15px auto;
+    display: block;
+    border: 2px solid #2e7d32;
+    border-radius: 10px;
+}
+
+/* Loan Form Container */
+form {
+    background: #ffffff;
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/* Labels and Inputs */
+label {
+    display: inline-block;
+    width: 180px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #2e2e2e;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: calc(100% - 190px);
+    padding: 7px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2e7d32;
+    box-shadow: 0 0 5px #81c784;
+}
+
+/* Required field asterisk */
+.req {
+    color: red;
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px 3px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+/* Result Messages */
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.eligible {
+    color: #2e7d32;
+    font-weight: bold;
+    background: #e8f5e9;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.not-eligible {
+    color: #c62828;
+    font-weight: bold;
+    background: #ffebee;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Storage Data Display */
+#storageDisplay {
+    margin-top: 20px;
+    padding: 15px;
+    max-width: 450px;
+    background: #f1f8e9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    label {
+        width: 100%;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    input, select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
